@@ -1,10 +1,16 @@
 const Koa = require('koa')
 const app = new Koa()
+const port = 3000
 
 app.use(async ctx => {
-  // ctx == context
   ctx.body = 'Hello World'
 })
 
 // TODO: add logging
-app.listen(3000)
+app
+  .listen(port, () => {
+    console.log(`Koa app running on port ${port}`)
+  })
+  .on('error', err => {
+    console.error(`  Server Error:\n    ${err} \n`)
+  })
