@@ -1,8 +1,10 @@
-const Koa = require('koa');
-const app = new Koa();
+const Koa = require('koa')
+const app = new Koa()
 
-app.use(async ctx => {        // ctx == context
-  ctx.body = 'Hello World'; 
-});
+app.use(async ctx => {
+  // ctx == context
+  ctx.body = 'Hello World'
+})
 
-app.listen(3000);
+// TODO: add logging
+app.listen(3000)

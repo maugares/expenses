@@ -4,11 +4,23 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node src/server/index.js",
+    "test": "jest",
+    "standard": "standard"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "koa": "^2.11.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.1.1",
+    "jest": "^25.1.0",
+    "standard": "^14.3.1"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
   }
 }
