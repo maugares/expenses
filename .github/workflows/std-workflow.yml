@@ -22,5 +22,6 @@ jobs:
       - run: echo 'Hello world'
       - run: npm ci
       - run: npm run test
+      - run: npm run standard
         env:
           CI: true
