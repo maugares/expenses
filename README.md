@@ -4,7 +4,7 @@ Step 1 - Run standard in pipeline
 
 Step 2 - Run test in pipeline
 
-TODO: Step 3 - Build a Docker Image
+Step 3 - Build a Docker Image
 
 - Step 3.1 - Create a file at project root named Dockerfile
 - Step 3.2 - Add instructions in Dockerfile
