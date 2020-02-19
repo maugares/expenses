@@ -9,3 +9,7 @@ ENV NPM_CONFIG_LOGLEVEL warn
 
 # copy project file
 COPY package*.json /home/node/app/
+
+# set tini as entrypoint
+RUN apk add --no-cache tini
+ENTRYPOINT ["/sbin/tini", "--"]
