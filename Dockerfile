@@ -7,5 +7,5 @@ RUN mkdir /home/node/app
 WORKDIR /home/node/app
 ENV NPM_CONFIG_LOGLEVEL warn
 
-# Log to commang line
-CMD ["echo", "Node is ready"]
+# copy project file
+COPY package*.json /home/node/app/
