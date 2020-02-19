@@ -1,4 +1,4 @@
-name: Run Expeceses Action
+name: Run Expenses Action
 # This workflow is triggered on pushes to the repository.
 on: [push]
 
@@ -12,4 +12,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Build the Docker image
-        run: docker build .
+        run: docker build -t expenses .
