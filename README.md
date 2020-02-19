@@ -20,6 +20,18 @@ Step 3 - Build a Docker Image
 - Step 3.5 - Let action build the image
 
 TODO: Step 4 - Publish Docker Image (to Docker Hub)  
+- Step 4.1 - login in a dockerhub account  
+  
+  `docker login`  
+
+- Step 4.2 - tag your image to a unique tag (to be pushed)  
+
+  `docker tag imageName uniqueTagForDockerHub`  
+
+- Step 4.3 - push the image to dockerhub  
+
+  `docker push maugares/expenses:tagname`
+
 TODO: Step 5 - Set up Kubernetes Cluster (CLI)  
 TODO: Step 6 - Deploy Docker Image on Kubernetes  
 TODO: Step 7 - Create Test and Production environments
