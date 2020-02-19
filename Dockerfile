@@ -1,12 +1,11 @@
-# Dockerfile step by step
-
 # Get base image
-FROM ubuntu
-# Add Mantainer
+FROM node:lts-alpine
 LABEL Mauro Garcia Esteban <mauro.garciaesteban@gmail.com>
 
-# Run a basic command
-RUN apt-get update
+# dirs for project files
+RUN mkdir /home/node/app
+WORKDIR /home/node/app
+ENV NPM_CONFIG_LOGLEVEL warn
 
 # Log to commang line
-CMD ["echo", "Ubuntu is ready"]
+CMD ["echo", "Node is ready"]
