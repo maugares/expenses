@@ -17,6 +17,8 @@ Step 3 - Build a Docker Image
 
   `docker run image`
 
+- Step 3.5 - Let action build the image
+
 TODO: Step 4 - Publish Docker Image (to Docker Hub)  
 TODO: Step 5 - Set up Kubernetes Cluster (CLI)  
 TODO: Step 6 - Deploy Docker Image on Kubernetes  
