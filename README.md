@@ -1,5 +1,7 @@
 # expenses
 
+## Server
+
 Step 1 - Run standard in pipeline
 
 Step 2 - Run test in pipeline
@@ -19,7 +21,8 @@ Step 3 - Build a Docker Image
 
 - Step 3.5 - Let action build the image
 
-TODO: Step 4 - Publish Docker Image (to Docker Hub)  
+Step 4 - Publish Docker Image (to Docker Hub)  
+
 - Step 4.1 - login in a dockerhub account  
   
   `docker login`  
@@ -35,3 +38,12 @@ TODO: Step 4 - Publish Docker Image (to Docker Hub)
 TODO: Step 5 - Set up Kubernetes Cluster (CLI)  
 TODO: Step 6 - Deploy Docker Image on Kubernetes  
 TODO: Step 7 - Create Test and Production environments
+
+## Client
+
+Step 1 - Add React  
+  
+    cd ~/src
+    npx create-react-app client
+
+TODO: Step 2 - Connect Client and server
